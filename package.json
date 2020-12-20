@@ -2,7 +2,7 @@
   "name": "nicetoolwebsite",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
+  "main": "src/pages/index.tsx",
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && gatsby build",
@@ -21,15 +21,16 @@
   },
   "homepage": "https://github.com/Loavso/NICEtoolWebsite#readme",
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/styles": "^4.10.0",
-    "gatsby": "^2.25.0",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/styles": "^4.11.2",
+    "gatsby": "^2.29.1",
     "gatsby-plugin-material-ui": "^2.1.10",
-    "gatsby-plugin-react-helmet": "^3.3.14",
-    "gatsby-plugin-typescript": "^2.5.0",
+    "gatsby-plugin-react-helmet": "^3.7.0",
+    "gatsby-plugin-typescript": "^2.9.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "typescript": "^4.0.5"
+    "typescript": "^4.1.3"
   }
 }

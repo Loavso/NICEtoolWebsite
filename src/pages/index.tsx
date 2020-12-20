@@ -1,22 +1,22 @@
-import * as React from 'react'
+import React, {CSSProperties, FC} from 'react'
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import Header from '../components/Header';
+import { CssBaseline } from '@material-ui/core';
 
-// Please note that you can use https://github.com/dotansimha/graphql-code-generator
-// to generate all types from graphQL schema
-interface Props {
-  data: {
-    site: {
-      siteMetadata: {
-        title: string
-      }
-    }
-  }
-}
+const darkTheme = createMuiTheme({
+  palette: {
+    type: 'dark',
+  },
+});
 
-const index = ({data}: Props) => {
+
+const index: FC = () => {
     return(
-    <div>
-        Hello World!
-    </div>
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
+        <Header />
+      </ThemeProvider>
 )}
+
 
 export default index
