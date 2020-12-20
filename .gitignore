@@ -1,2 +1,11 @@
+# dependencies
 node_modules/
+
+# production
 dist/
+
+# testing
+
+# Gatsby.js
+/public
+/.cache
