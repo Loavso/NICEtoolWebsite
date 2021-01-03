@@ -3,17 +3,18 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import Container from '@material-ui/core/Container';
-import { Divider, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import QuickStart from './QuickStart';
+import Divider from '@material-ui/core/Divider';
 
 function Copyright() {
   return (
     <React.Fragment>
       {'© '}
+      {new Date().getFullYear()}
       <Link color="inherit" href="https://gitlab.com/sd-scanner">
         NICEtool
       </Link>{' '}
-      {new Date().getFullYear()}
     </React.Fragment>
   );
 }
@@ -36,9 +37,12 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(8),
     display: 'flex',
   },
-  iconsWrapper: {
-    height: 120,
-  },
+  divider: {
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(3),
+    width: '100%',
+    backgroundColor: theme.palette.primary.dark
+  }
 }));
 
 export default function AppFooter() {
@@ -53,11 +57,8 @@ export default function AppFooter() {
           alignItems="center"
           spacing={5}>
             <QuickStart />
-            <Grid sm={10} item>
-              <Divider variant="middle" flexItem/>
-            </Grid>
+            <Divider variant="middle" className={classes.divider} />
             <Grid
-              sm={9}
               container
               direction="row"
               justify="space-between"
