@@ -6,7 +6,7 @@ import Container from '@material-ui/core/Container';
 
 const styles = (theme) => ({
   root: {
-    color: theme.palette.common.white,
+    color: '#F6F1D1',
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
@@ -17,6 +17,7 @@ const styles = (theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    height: '100%'
   },
   backdrop: {
     position: 'absolute',
@@ -24,7 +25,7 @@ const styles = (theme) => ({
     right: 0,
     top: 0,
     bottom: 0,
-    backgroundColor: theme.palette.common.black,
+    backgroundColor: '#0B2027',
     opacity: 0.5,
     zIndex: -1,
   },

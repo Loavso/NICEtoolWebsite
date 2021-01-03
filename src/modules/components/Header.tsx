@@ -70,16 +70,16 @@ export default function Header() {
                     justify="center"
                     alignItems="center">
                     <Grid item>
-                        <Button>
-                            <Link to="/documentation">Documentation</Link>
+                        <Button color="inherit" to="/documentation" component={Link}>
+                            Documentation
                         </Button>
                     </Grid>
                     <Grid item>
                         <Typography> | </Typography>
                     </Grid>
                     <Grid item>
-                        <Button>
-                            <a href="https://gitlab.com/sd-scanner">GitLab</a>
+                        <Button color="inherit" to="https://gitlab.com/sd-scanner" component={Link}>
+                            GitLab
                         </Button>
                     </Grid>
                 </Grid>

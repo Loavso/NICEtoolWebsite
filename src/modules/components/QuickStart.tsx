@@ -1,19 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Link from '@material-ui/core/Link';
-import Container from '@material-ui/core/Container';
-import { Button, Divider, TextField, Typography } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import GetAppIcon from '@material-ui/icons/GetApp';
-import theme from '../theme';
-
-const useStyles = makeStyles((theme) => ({
-
-}));
 
 export default function QuickStart() {
-  const classes = useStyles();
-
   return (
     <Grid
         container
