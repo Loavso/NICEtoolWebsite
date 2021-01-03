@@ -1,20 +1,16 @@
-import React, {CSSProperties, FC} from 'react'
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import Header from '../components/Header';
-import { CssBaseline } from '@material-ui/core';
-
-const darkTheme = createMuiTheme({
-  palette: {
-    type: 'dark',
-  },
-});
+import React, {FC} from 'react'
+import Header from '../modules/components/Header';
+import { CssBaseline, ThemeProvider } from '@material-ui/core';
+import Footer from '../modules/components/Footer';
+import theme from '../modules/theme';
 
 
 const index: FC = () => {
     return(
-      <ThemeProvider theme={darkTheme}>
+      <ThemeProvider theme={theme}>
         <CssBaseline />
         <Header />
+        <Footer />
       </ThemeProvider>
 )}
 
